@@ -467,14 +467,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      group: [
-        {
-          gate: "and",
-          expressionList: [{}],
-          group: [],
-          id: 0
-        }
-      ],
+      group: this.props.data,
       allFields: this.props.fields,
       refresh: true
     };
